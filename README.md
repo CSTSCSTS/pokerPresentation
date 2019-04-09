@@ -3,6 +3,7 @@ poker.jar確認
 - 確認事項
   - poker.jarが正常に実行できること
   - DBアクセスが正常に実施できること
+  
 ※ 以下の手順実施する前に、以下のURLにアクセスすること。
 `https://github.com/CSTSCSTS/pokerPresentation`
 - 手順
