@@ -1,0 +1,49 @@
+2019-03-11 23:24:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "POKER_USER_INFO" が見つかりません
+Table "POKER_USER_INFO" not found; SQL statement:
+/*
+ [df:title]
+  所持金ランキング取得SQL
+
+ [df:description]
+  ポーカーユーザー情報と所持金テーブルをJOINして、
+  所持金の多い順・更新日時が新しい順にソート
+
+*/
+
+-- #df:entity#
+-- !df:pmb!
+-- !!AutoDetect!!
+
+select *
+  from POKER_USER_INFO pui
+  inner join POSSESSION_MONEY pm on pui.user_id = pm.user_id
+ order by pm.possession_money desc, pm.update_date desc [42102-196]
+2019-03-11 23:25:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "POKER_USER_INFO" が見つかりません
+Table "POKER_USER_INFO" not found; SQL statement:
+select dfloc.USER_ID as USER_ID, dfloc.USER_NAME as USER_NAME, dfloc.PASSWORD as PASSWORD, dfloc.LOGIN_DATE as LOGIN_DATE
+  from POKER_USER_INFO dfloc
+ where dfloc.USER_NAME = ?
+   and dfloc.PASSWORD = ? [42102-196]
+2019-03-17 12:32:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "POKER_USER_INFO" が見つかりません
+Table "POKER_USER_INFO" not found; SQL statement:
+/*
+ [df:title]
+  所持金ランキング取得SQL
+
+ [df:description]
+  ポーカーユーザー情報と所持金テーブルをJOINして、
+  所持金の多い順・更新日時が新しい順にソート
+
+*/
+
+-- #df:entity#
+-- !df:pmb!
+-- !!AutoDetect!!
+
+select *
+  from POKER_USER_INFO pui
+  inner join POSSESSION_MONEY pm on pui.user_id = pm.user_id
+ order by pm.possession_money desc, pm.update_date desc [42102-196]
